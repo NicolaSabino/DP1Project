@@ -1,0 +1,80 @@
+table {
+    /*border: 1px solid #595d63;*/
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius:6px;
+    -moz-border-radius:6px;
+
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 30px auto;
+}
+
+td {
+
+    border-left: 2px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+    cell-spacing: 3px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+
+
+    font: 200 60px helvetica neue, arial;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* remove the last line bottom row*/
+tr:last-child > td {
+  border-bottom: none;
+}
+
+/* apply radius effect 「 */
+tr:first-child > td:first-child{
+  border-top-left-radius:6px;
+  -moz-border-top-left-radius:6px;
+}
+/* apply radius effect ﹁ */
+tr:first-child > td:last-child{
+  border-top-right-radius:6px;
+  -moz-border-top-right-radius:6px;
+}
+/* apply radius effect ﹂ */
+tr:last-child > td:first-child{
+  border-bottom-left-radius:6px;
+  -moz-border-bottom-left-radius:6px;
+}
+/* apply radius effect 」*/
+tr:last-child > td:last-child{
+  border-bottom-right-radius:6px;
+  -moz-border-bottom-right-radius:6px;
+}
+
+/* remove the first column left border */
+td:first-child {
+     border-left: none;
+}
+
+
+td.X {
+    background-color: rgba(0,0,0,0.85);
+}
+
+td.W {
+    background-color: rgba(0,0,0,0);
+}
+
+td.G {
+    background-color: rgb(6, 147, 69);
+}
+
+td.M{
+  background-color: grey;
+}

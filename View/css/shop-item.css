@@ -1,0 +1,19 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.footer-bottom {
+    position: fixed;
+    bottom: 0;
+    min-height: 30px;
+}
+
+.navbar-brand {
+    font-family: "Courier New", Courier, monospace;
+}
